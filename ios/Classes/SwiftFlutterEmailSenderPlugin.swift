@@ -57,7 +57,7 @@ public class SwiftFlutterEmailSenderPlugin: NSObject, FlutterPlugin {
                     }
                 }
             }
-
+            viewController.modalPresentationStyle = .fullScreen
             viewController.present(mailComposerVC,
                                    animated: true,
                                    completion: { result(nil) }
